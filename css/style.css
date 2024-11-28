@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5em;
+    background-color: #0a0a0a;
+    padding: 0 4em;
+    z-index: 999;
+}
+
+.icon {
+    width: 4.5em;
+    margin-left: 2em;
+}
+
+.header-main h1 {
+    color: white;
+    font-family: "Parkinsans", system-ui;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    word-spacing: .5em;
+}
+
+.header-main h2 {
+    color: white;
+    font-family: "Geist Mono", system-ui;
+    font-size: 2em;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.menu ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    height: 3.5em;
+    padding: 0 2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Parkinsans", system-ui;
+    transition: all .1s ease-out;
+}
+
+.menu ul > li > a:hover {
+    color: orange;
+}
+
+.btnSair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    height: 3.5em;
+    padding: 0 2em;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Parkinsans", system-ui;
+    transition: all .1s ease-out;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnSair:hover {
+    color: orange;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url("/img/background.jpg");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5em;
+}
+
+.container > h1 {
+    font-family: "Parkinsans",system-ui;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url('/img/background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter:contrast(140%) brightness(100%);
+}
+
+.formulario-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    backdrop-filter: blur(15px);
+    padding: 2em 10em;
+    box-shadow: black 0;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+}
+
+.formulario-cadastro h1 {
+    font-family: "Parkinsans", system-ui;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 3rem;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.input label {
+    width: fit-content;
+    text-wrap: nowrap;
+    font-family: "Geist Mono";
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.input-descricao-pizza {
+    height: 150px;
+}
+
+.input-descricao-pizza label {
+    align-self: flex-start;
+}
+
+.input textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.input textarea:focus {
+    outline: none;
+}
+
+.input input {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    font-size: 1.1em;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.double-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-cep {
+    margin-left: 1em;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.botoes input {
+    font-family: "Parkinsans", system-ui;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 49%;
+    height: 60px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    transition: all .1s ease-out;
+}
+
+.botoes input:hover {
+    background: orange;
+}
+
+.pizzas {
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1060px;
+    gap: 20px;
+    height: 80%;
+    background: transparent;
+}
+
+.card-pizza {
+    flex: 0 0 250px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    transition: all .1s ease-out;
+}
+
+.card-pizza:hover {
+    transform: scale(102%);
+}
+
+.card-pizza > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card-pizza > form > h1 {
+    font-family: "Parkinsans", system-ui;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-pizza > form > p {
+    font-family: "Geist Mono", system-ui;
+    font-size: .9em;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+.card-pizza > form > label {
+    font-family: "Geist Mono", system-ui;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self:flex-end;
+    margin-bottom: 5px;
+}
+.quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+
+.quantidade label {
+    font-family: "Geist Mono", system-ui;
+    font-size: .9em;
+    width: fit-content;
+    text-wrap: nowrap;
+}
+
+.quantidade input[type='number'] {
+    height: 30px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: "Geist Mono", system-ui;
+    font-size: .9em;
+    padding-left: 10px;
+}
+
+.card-pizza > form > input[type='submit'] {
+    font-family: "Parkinsans", system-ui;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    background: orange;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+
+.card-pizza > form > input[type='submit']:hover {
+    background: rgb(255, 199, 80);
+}
+
+.carrinho {
+    background: url('/img/background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter:contrast(140%) brightness(100%);
+}
+
+.lista-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    backdrop-filter: blur(15px);
+    padding: 2em 10em;
+    box-shadow: black 0;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+}
+
+.pizzas-table {
+    width: 100%;
+    color: white;
+    font-family: "Geist Mono",system-ui;
+    font-size: 1.2em;
+}
+
+.pizzas-table th {
+    width: 33%;
+    font-family: "Parkinsans",system-ui;
+    font-family: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.pizzas-table td {
+    text-align: center;
+    height: 30px;
+}
+
+.valor-total {
+    position: absolute;
+    bottom: 20%;
+    font-family: "Parkinsans", system-ui;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#btnComprar {
+    position: absolute;
+    bottom: 10%;
+    left: 16%;
+    font-family: "Parkinsans", system-ui;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 33%;
+    height: 60px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    transition: all .1s ease-out;
+}
+#btnComprar:hover {
+    background: orange;
+}
+
+#btnLimparCarrinho {
+    position: absolute;
+    bottom: 10%;
+    right: 16%;
+    font-family: "Parkinsans", system-ui;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 33%;
+    height: 60px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    transition: all .1s ease-out;
+}
+
+#btnLimparCarrinho:hover {
+    background: orange;
+}
+
+.carrinho-vazio {
+    font-family: "Geist Mono", system-ui;
+    font-size: 1.3em;
+    color: white;
+}
+
+.carrinho-vazio a {
+    color: white;
+    transition: all .1s ease-out;
+}
+
+.carrinho-vazio a:hover {
+    color: black;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url('/img/background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter:contrast(140%) brightness(100%);
+}
+
+.formulario-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    backdrop-filter: blur(15px);
+    padding: 2em 10em;
+    box-shadow: black 0;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+}
+
+.formulario-login h1 {
+    font-family: "Parkinsans", system-ui;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 3rem;
+}
+
+.formulario-login > .botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.formulario-login > .botoes input {
+    font-family: "Parkinsans", system-ui;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50%;
+    height: 60px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    transition: all .1s ease-out;
+}
+
+.formulario-login > .botoes input:hover {
+    background: orange;
+}
+
+.nome_cliente {
+    font-family: "Parkinsans",system-ui;
+    font-size: 2em;
+    position: absolute;
+    top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#btnRemoverPizza {
+    font-family: "Parkinsans", system-ui;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    background: orange;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+
+#btnRemoverPizza:hover {
+    background: rgb(255, 199, 80);
+}
